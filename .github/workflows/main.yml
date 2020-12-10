@@ -37,6 +37,7 @@ jobs:
       - run: npm install
       
       - run: npm run cy:run
+        continue-on-error: true
         
       - run: report:merge
         
