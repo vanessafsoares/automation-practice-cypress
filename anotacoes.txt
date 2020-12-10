@@ -1,0 +1,21 @@
+--------------------------------------------------instalando o cypress---------------------------------------------------------
+
+
+--------------------------------------------------instalando o reporter---------------------------------------------------------
+
+comando -> npm install -D cypress-multi-reporters mocha mochawesome mochawesome-merge mochawesome-report-generator
+
+Contexto
+
+mocha -> lib adicional
+mochawesome -> biblioteca responsavel por gerar os arquivos .json usados no report html
+mochawesome-merge -> merge dos arquivos json gerados pelo mochawesome -> arquivo_final.json
+mochawesome-report-generator -> gerar o relatório em html usando os arquivos gerados (json) usados
+
+cypress-multi reporters -> lib do cypress que permite gerar relatórios com multi libs
+mocha
+mochawesome
+mochawesome-merge
+mochawesome-report-generator
+
+rimraf -> lib que limpa os reporters gerados de maneira global (independente da plataforma)
