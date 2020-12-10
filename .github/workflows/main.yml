@@ -39,9 +39,9 @@ jobs:
       - run: npm run cy:run
         continue-on-error: true
         
-      - run: report:merge
+      - run: npm run report:merge
         
-      - run: report:mocha
+      - run: npm run report:mocha
         
       - name: Deploy on Github Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
