@@ -19,7 +19,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    
     strategy:
       matrix:
         node-version: [12.x]
@@ -29,21 +29,22 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.2
         with:
-          node-version: ${{matrix.node-version}}
-        
+          node-version: ${{ matrix.node-version }}
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        
+
       - run: npm install
-      
+
       - run: npm run cy:run
         continue-on-error: true
-        
+
       - run: npm run report:merge
         
       - run: npm run report:mocha
-        
-      - name: Deploy on Github Pages
+
+
+      - name: Deploy to GithubPages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
