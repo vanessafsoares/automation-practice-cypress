@@ -1,2 +1,3 @@
-node_modules
-anotacoes.txt
+node_modules/
+cypress/videos/
+.txt
