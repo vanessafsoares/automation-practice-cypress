@@ -1,4 +1,4 @@
-# AUTOMATION PRACTICE CASE #
+# AUTOMATION PRACTICE#
 
 Projeto de automação de testes desenvolvido com intuito de validar o front-end do site [Automation Practice](http://automationpractice.com/index.php) utilizando as seguintes tecnologias:
  
@@ -7,12 +7,12 @@ Projeto de automação de testes desenvolvido com intuito de validar o front-end
  - Mocha
  - Mochawesome Report
 
-### Requisitos para instalação: ###
+### Requisitos para instalação ###
 
 * Node.js
 * Cypress
 
-### Configurando o Ambiente :gear:: ###
+### Configurando o Ambiente :gear ###
 
 ```shell
 1. Faça um clone do projeto:
@@ -21,7 +21,7 @@ Projeto de automação de testes desenvolvido com intuito de validar o front-end
     npm install
 ```
 
-### Executando o Projeto :white_check_mark::
+### Executando o Projeto :white_check_mark
 
 ```javascript
 1. Para executar no navegador: 
