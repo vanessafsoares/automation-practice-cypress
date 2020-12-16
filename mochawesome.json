@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-16T20:06:27.636Z",
-    "end": "2020-12-16T20:06:27.667Z",
-    "duration": 31,
+    "start": "2020-12-16T22:25:27.718Z",
+    "end": "2020-12-16T22:25:27.746Z",
+    "duration": 28,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "133d08fe-f8a5-4bac-901b-3d00f67f3f6c",
+      "uuid": "1165fce5-c540-4c6f-a450-3606b57a3c3b",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ef738c98-64e0-4048-b655-1b376d6b2323",
+          "uuid": "8835dd09-a38b-4e37-8e26-adc17c0208e2",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Efetuar cadastro de usuario",
               "fullTitle": "Cadastro Efetuar cadastro de usuario",
               "timedOut": null,
-              "duration": 19,
+              "duration": 18,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "//implementar cenário aqui",
               "err": {},
-              "uuid": "2252ccf4-3c07-47d3-8c61-396f1e4fe634",
-              "parentUUID": "ef738c98-64e0-4048-b655-1b376d6b2323",
+              "uuid": "f57ce653-d59c-48d7-a133-92696997c5c9",
+              "parentUUID": "8835dd09-a38b-4e37-8e26-adc17c0208e2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2252ccf4-3c07-47d3-8c61-396f1e4fe634"
+            "f57ce653-d59c-48d7-a133-92696997c5c9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 19,
+          "duration": 18,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
