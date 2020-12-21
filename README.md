@@ -10,42 +10,38 @@
   <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/vanessafsoares/automation-practice-cypress?style=flat-square">
  </h1>
  
- 
- <p align="center">
- <a href="#requisitos">Requisitos</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
- <a href="#ambiente">Ambiente</a> • 
- <a href="#executando-o-projeto">Projeto</a> • 
- <a href="#cena-rios">Cenários</a> • 
-</p>
- 
+
 ---
 ## Começando
 
-### Requisitos ###
-
-- [x] Node.js
-- [x] Cypress
-
-### Clonando & instalando dependências
-
-- 1.1) `git clone https://github.com/vanessafsoares/automation-practice-cypress`
-- 1.2) `cd automation-practice-cypress` - faça o cd no diretório do seu projeto recém clonado
-- 1.3) Instalando NPM packages com `npm install`
+### Pré-requisitos ⚙️ ###
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [Cypress](https://cypress.io/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 
-### Executando o Projeto :white_check_mark:
+```ruby
+# Clone este repositório
+$ git clone <https://github.com/vanessafsoares/automation-practice>
 
-```javascript
-1. Para executar no navegador: 
-    npm run cy:open
+# Acesse a pasta do projeto no terminal/cmd
+$ cd automation-practice
 
-2. Para executar em modo headless:
-    npm run cy:run
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação no navegador
+$ npm run cy:open
+
+# Execute a aplicação em modo headless
+$ npm run cy:run
+
+# Execute a aplicação em modo headless
+$ npm run cy:run
 ```
----
- ### Cenários
 
+---
+ ### Cenários :white_check_mark:
 - [x] Cadastro de usuário
 - [x] Compra
 
