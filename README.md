@@ -16,7 +16,6 @@
   </kbd>
 </p>
 
----
 ## Começando 💻
 
 ### Pré-requisitos ⚙️ ###
@@ -45,13 +44,13 @@ $ npm run cy:run
 $ npm run cy:run
 ```
 
----
+
  ## Cenários :white_check_mark:
  
 - [x] Cadastro de usuário
 - [x] Compra
 
----
+
  ## Stack
  <p align="center">
   <img src="https://img.shields.io/badge/javascript-000000?style=for-the-badge&logo=javascript"/>
