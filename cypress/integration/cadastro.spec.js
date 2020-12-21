@@ -1,16 +1,16 @@
 const chance = require('chance').Chance()
 
 context('Cadastro', () => {
+  const email = chance.email()
+  const firstName = chance.first()
+  const lastName = chance.last()
+  const address = chance.address()
+  const city = chance.city()
+  const zipcode = chance.zip()
+  const mobile = chance.phone()
+
   it('Efetuar cadastro de usuario', () => {
     cy.visit('index.php?controller=authentication&back=my-account')
-
-    const email = chance.email()
-    const firstName = chance.first()
-    const lastName = chance.last()
-    const address = chance.address()
-    const city = chance.city()
-    const zipcode = chance.zip()
-    const mobile = chance.phone()
 
     cy.get('input#email_create').type(email)
 
@@ -47,5 +47,22 @@ context('Cadastro', () => {
     cy.get('button#submitAccount').click()
 
     cy.url().should('contain', 'my-account')
+
+    cy.get('div.row')
+      .parent()
+      .children('p')
+      .should('contain.text', 'Welcome to your account.')
+  })
+
+  it('Efetuar cadastro de email inválido', () => {
+    cy.visit('index.php?controller=authentication&back=my-account')
+
+    cy.get('input#email_create').type('asfajjasdgfj')
+
+    cy.get('button#SubmitCreate').click()
+
+    cy.get('div.row .alert')
+      .parent()
+      .should('contain.text', 'Invalid email address.')
   })
 })
