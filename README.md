@@ -10,6 +10,11 @@
   <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/vanessafsoares/automation-practice-cypress?style=flat-square">
  </h1>
  
+<p align="center">
+  <kbd>
+    <img width="850" style="border-radius: 5px" height="550" src="https://imgur.com/l6zT6eT.gif" alt="Intro">
+  </kbd>
+</p>
 
 ---
 ## Começando
