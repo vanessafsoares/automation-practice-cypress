@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-21T23:08:42.500Z",
-    "end": "2020-12-21T23:08:58.650Z",
-    "duration": 16150,
+    "start": "2020-12-21T23:12:22.901Z",
+    "end": "2020-12-21T23:12:41.084Z",
+    "duration": 18183,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c1dbf484-36db-43a2-a462-19cf8c7b5768",
+      "uuid": "bdaf7778-1b28-41ec-a6c3-02e3e63988fd",
       "title": "",
       "fullFile": "cypress/integration/compra.spec.js",
       "file": "cypress/integration/compra.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "70ab7c68-423a-40e0-9423-918a15768d90",
+          "uuid": "eb666510-6df1-4dea-b272-a7f20f2767f2",
           "title": "Compra",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Efetuar uma compra de produto",
               "fullTitle": "Compra Efetuar uma compra de produto",
               "timedOut": null,
-              "duration": 16041,
+              "duration": 18080,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.backgroundLogin();\ncy.visit('/');\nvar nomeProduto = 'Faded Short Sleeve T-shirts';\ncy.contains(nomeProduto).trigger('mouseover');\ncy.contains(nomeProduto) // elemento\n.parent() // pai do elemento\n.siblings('div.button-container') // irmão do elemento\n.children('a') // filho do elemento\n.first() // add to cart\n.click(); // ação no elemento\n// Validando se o produto foi adicionado ao carrinho com sucesso\ncy.get('.icon-ok').parent() // h2\n.should('contain.text', 'Product successfully added to your shopping cart');\ncy.get('span#layer_cart_product_title').should('contain.text', nomeProduto); // cy.pause() pausa a automação em tempo de execução\ncy.get(\".button-container a[href$='controller=order']\").click();\ncy.get(\".cart_navigation a[href$='order&step=1']\").click(); // cy.get('#email').type('semana-agilizei@mail.com');\n// cy.get('#passwd').type('12345');\n// cy.get('button#SubmitLogin').click();\ncy.get('button[name=processAddress').click(); // //Validando se o endereço de entrega é igual ao de cobrança\n// cy.get('[type=checkbox]#addressesAreEquals')\n//     .should('have.attr', 'checked', 'checked') //asserção | atributo | valor\ncy.get('[type=checkbox]#cgv').check();\ncy.get('button[name=processCarrier]').click();\ncy.get('.bankwire').click();\ncy.get('.cart_navigation button[type=submit]').find('span').contains('I confirm my order').click();\ncy.get('.cheque-indent strong').should('contain.text', 'Your order on My Store is complete.'); // should\n// expect\n// validando o código do produto\n// [x] capturar o texto do box do\n// [x] filtrar o texto do box para estrair somente o ID do pedido\n// [x] armazenar o ID do pedido\n// [] obter o ID do pedido armazenado\ncy.get('div.box').invoke('text') // chamando a função text\n.then(function (text) {\n  console.log(text); // exibe o texto do conteúdo filtrado\n  console.log(text.match(/[A-Z][A-Z]+/g)[1]); // faz o match do texto com o array do regex procurando pelo id do pedido\n  // escrita de um arquivo json com o conteudo do Pedido\n  // caminho do arquivo (sempre a partir do root) | conteudo do arquivo\n  cy.writeFile('cypress/fixtures/pedido.json', {\n    id: \"\".concat(text.match(/[A-Z][A-Z]+/g)[1])\n  });\n});\ncy.get(\".cart_navigation a[href$='history']\").click(); // leitura do arquivo\ncy.readFile('cypress/fixtures/pedido.json').then(function (pedido) {\n  cy.get('tr.first_item .history_link a').should('contain.text', pedido.id);\n});",
               "err": {},
-              "uuid": "40586430-b84d-43f2-9729-e852622b5940",
-              "parentUUID": "70ab7c68-423a-40e0-9423-918a15768d90",
+              "uuid": "fc3ba6ea-3760-4515-9a5c-95cfa7480f36",
+              "parentUUID": "eb666510-6df1-4dea-b272-a7f20f2767f2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "40586430-b84d-43f2-9729-e852622b5940"
+            "fc3ba6ea-3760-4515-9a5c-95cfa7480f36"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 16041,
+          "duration": 18080,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
