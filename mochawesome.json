@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-21T20:19:49.821Z",
-    "end": "2020-12-21T20:20:00.054Z",
-    "duration": 10233,
+    "start": "2020-12-21T22:30:50.769Z",
+    "end": "2020-12-21T22:31:01.627Z",
+    "duration": 10858,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7dc3aca7-06e7-4555-bb0a-0390092273a9",
+      "uuid": "704c2a9f-4e75-41dc-99a3-a95f5434bd20",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "83d60f82-f63a-4f4f-acef-80ad6169a39a",
+          "uuid": "7274b57e-9574-437c-be87-d371c7eb1cca",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Efetuar cadastro de usuario",
               "fullTitle": "Cadastro Efetuar cadastro de usuario",
               "timedOut": null,
-              "duration": 10168,
+              "duration": 10825,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('index.php?controller=authentication&back=my-account');\nvar email = chance.email();\nvar firstName = chance.first();\nvar lastName = chance.last();\nvar address = chance.address();\nvar city = chance.city();\nvar zipcode = chance.zip();\nvar mobile = chance.phone();\ncy.get('input#email_create').type(email);\ncy.get('button#SubmitCreate').click();\ncy.get('input#id_gender2').check();\ncy.get('input#customer_firstname').type(firstName);\ncy.get('input#customer_lastname').type(lastName);\ncy.get('input#passwd').type('TesteQA@123');\ncy.get('select#days').select('15');\ncy.get('select#months').select('November');\ncy.get('select#years').select('1997');\ncy.get('input#optin').check();\ncy.get('input[name=\"address1\"]').type(address);\ncy.get('input[name=\"address2\"]').type('Apartment 21');\ncy.get('input[name=\"city\"]').type(city);\ncy.get('select#id_state').select('Kansas');\ncy.get('input#postcode').type(zipcode);\ncy.get('input#phone_mobile').type(mobile);\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'my-account');",
               "err": {},
-              "uuid": "faf14ccc-7b71-4551-a3ef-d24e405a3614",
-              "parentUUID": "83d60f82-f63a-4f4f-acef-80ad6169a39a",
+              "uuid": "f60bb72e-2420-4143-8057-55833731960b",
+              "parentUUID": "7274b57e-9574-437c-be87-d371c7eb1cca",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "faf14ccc-7b71-4551-a3ef-d24e405a3614"
+            "f60bb72e-2420-4143-8057-55833731960b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10168,
+          "duration": 10825,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
