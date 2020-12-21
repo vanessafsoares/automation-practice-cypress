@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-21T22:47:46.881Z",
-    "end": "2020-12-21T22:47:56.071Z",
-    "duration": 9190,
-    "testsRegistered": 1,
+    "start": "2020-12-21T22:49:35.989Z",
+    "end": "2020-12-21T22:49:48.497Z",
+    "duration": 12508,
+    "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1af45d88-a708-4846-854a-ed89575baa0d",
+      "uuid": "42b2d7c2-0494-4caa-b7c3-5e2ad1043e52",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3dc85245-38e1-475f-8e88-fa0e06e13eb6",
+          "uuid": "1108b621-3037-497c-94f8-2eacdff95a5b",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,48 @@
               "title": "Efetuar cadastro de usuario",
               "fullTitle": "Cadastro Efetuar cadastro de usuario",
               "timedOut": null,
-              "duration": 9134,
+              "duration": 10547,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "cy.visit('index.php?controller=authentication&back=my-account');\nvar email = chance.email();\nvar firstName = chance.first();\nvar lastName = chance.last();\nvar address = chance.address();\nvar city = chance.city();\nvar zipcode = chance.zip();\nvar mobile = chance.phone();\ncy.get('input#email_create').type(email);\ncy.get('button#SubmitCreate').click();\ncy.get('input#id_gender2').check();\ncy.get('input#customer_firstname').type(firstName);\ncy.get('input#customer_lastname').type(lastName);\ncy.get('input#passwd').type('TesteQA@123');\ncy.get('select#days').select('15');\ncy.get('select#months').select('November');\ncy.get('select#years').select('1997');\ncy.get('input#optin').check();\ncy.get('input[name=\"address1\"]').type(address);\ncy.get('input[name=\"address2\"]').type('Apartment 21');\ncy.get('input[name=\"city\"]').type(city);\ncy.get('select#id_state').select('Kansas');\ncy.get('input#postcode').type(zipcode);\ncy.get('input#phone_mobile').type(mobile);\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'my-account');",
+              "code": "cy.visit('index.php?controller=authentication&back=my-account');\ncy.get('input#email_create').type(email);\ncy.get('button#SubmitCreate').click();\ncy.get('input#id_gender2').check();\ncy.get('input#customer_firstname').type(firstName);\ncy.get('input#customer_lastname').type(lastName);\ncy.get('input#passwd').type('TesteQA@123');\ncy.get('select#days').select('15');\ncy.get('select#months').select('November');\ncy.get('select#years').select('1997');\ncy.get('input#optin').check();\ncy.get('input[name=\"address1\"]').type(address);\ncy.get('input[name=\"address2\"]').type('Apartment 21');\ncy.get('input[name=\"city\"]').type(city);\ncy.get('select#id_state').select('Kansas');\ncy.get('input#postcode').type(zipcode);\ncy.get('input#phone_mobile').type(mobile);\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'my-account');\ncy.get('div.row').parent().children('p').should('contain.text', 'Welcome to your account.');",
               "err": {},
-              "uuid": "2fc6f573-8ea2-4292-825b-b6c9503dccad",
-              "parentUUID": "3dc85245-38e1-475f-8e88-fa0e06e13eb6",
+              "uuid": "a8fbfb2b-8bc1-4347-b10f-8ae26c20c424",
+              "parentUUID": "1108b621-3037-497c-94f8-2eacdff95a5b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Efetuar cadastro de email inválido",
+              "fullTitle": "Cadastro Efetuar cadastro de email inválido",
+              "timedOut": null,
+              "duration": 1886,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('index.php?controller=authentication&back=my-account');\ncy.get('input#email_create').type('asfajjasdgfj');\ncy.get('button#SubmitCreate').click();\ncy.get('div.row .alert').parent().should('contain.text', 'Invalid email address.');",
+              "err": {},
+              "uuid": "5a381b99-8004-453a-a0fe-0558ced7b84d",
+              "parentUUID": "1108b621-3037-497c-94f8-2eacdff95a5b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2fc6f573-8ea2-4292-825b-b6c9503dccad"
+            "a8fbfb2b-8bc1-4347-b10f-8ae26c20c424",
+            "5a381b99-8004-453a-a0fe-0558ced7b84d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9134,
+          "duration": 12433,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
