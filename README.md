@@ -10,9 +10,13 @@
   <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/vanessafsoares/automation-practice-cypress?style=flat-square">
  </h1>
  
+<p align="center">
+  <kbd>
+    <img width="850" style="border-radius: 5px" height="550" src="https://imgur.com/l6zT6eT.gif" alt="Intro">
+  </kbd>
+</p>
 
----
-## Começando
+## Começando 💻
 
 ### Pré-requisitos ⚙️ ###
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
@@ -40,13 +44,14 @@ $ npm run cy:run
 $ npm run cy:run
 ```
 
----
- ### Cenários :white_check_mark:
+
+ ## Cenários :white_check_mark:
+ 
 - [x] Cadastro de usuário
 - [x] Compra
 
----
- ### Stack
+
+ ## Stack
  <p align="center">
   <img src="https://img.shields.io/badge/javascript-000000?style=for-the-badge&logo=javascript"/>
   <img src="https://img.shields.io/badge/cypress-000000?style=for-the-badge&logo=cypress"/>
