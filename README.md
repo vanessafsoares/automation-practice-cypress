@@ -52,7 +52,7 @@ $ npm run cy:run
 - [x] Compra
 
 ---
- ### Stack
+ ## Stack
  <p align="center">
   <img src="https://img.shields.io/badge/javascript-000000?style=for-the-badge&logo=javascript"/>
   <img src="https://img.shields.io/badge/cypress-000000?style=for-the-badge&logo=cypress"/>
