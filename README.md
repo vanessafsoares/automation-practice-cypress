@@ -19,24 +19,15 @@
  <a href="#cena-rios">Cenários</a> • 
 </p>
  
-
- 
- 
- ### Cenários
-
-- [x] Cadastro de usuário
-- [x] Compra
- 
+---
+## Começando
 
 ### Requisitos ###
 
 - [x] Node.js
 - [x] Cypress
 
-
-### Começando
-
-#### 1) Clonando & instalando dependências
+### Clonando & instalando dependências
 
 - 1.1) `git clone https://github.com/vanessafsoares/automation-practice-cypress`
 - 1.2) `cd automation-practice-cypress` - faça o cd no diretório do seu projeto recém clonado
@@ -52,6 +43,12 @@
 2. Para executar em modo headless:
     npm run cy:run
 ```
+---
+ ### Cenários
+
+- [x] Cadastro de usuário
+- [x] Compra
+
 ---
  ### Stack
  <p align="center">
