@@ -24,6 +24,7 @@
       "cypress/assertion-before-screenshot": "warn",
       "cypress/no-force": "warn",
       "cypress/no-async-tests": "error",
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      "no-console": "off"
     }
 }
