@@ -17,7 +17,7 @@
 </p>
 
 ---
-## Começando
+## Começando 💻
 
 ### Pré-requisitos ⚙️ ###
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
@@ -46,7 +46,8 @@ $ npm run cy:run
 ```
 
 ---
- ### Cenários :white_check_mark:
+ ## Cenários :white_check_mark:
+ 
 - [x] Cadastro de usuário
 - [x] Compra
 
