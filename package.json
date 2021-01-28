@@ -8,7 +8,7 @@
     "cy:run": "npx cypress run",
     "report:merge": "mochawesome-merge > index.json",
     "report:mocha": "marge index.json",
-    "report:clean": "rimraf mochawesome-report index.json",
+    "report:clean": "rimraf cypress/videos mochawesome-report index.json",
     "lint": "npx eslint ./cypress",
     "lint:fix": "npx eslint ./cypress --fix"
   },
