@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 1,
+    "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2020-12-22T19:15:45.246Z",
-    "end": "2020-12-22T19:15:59.055Z",
-    "duration": 13809,
+    "failures": 1,
+    "start": "2021-01-29T19:25:20.272Z",
+    "end": "2021-01-29T19:25:33.504Z",
+    "duration": 13232,
     "testsRegistered": 1,
-    "passPercent": 100,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "75b27696-d288-4f7a-a122-8bda78314867",
+      "uuid": "693b4c3e-adcf-4fe7-b7cd-533840efedd3",
       "title": "",
       "fullFile": "cypress/integration/compra.spec.js",
       "file": "cypress/integration/compra.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8ac7d3c4-7d18-4a37-91d4-59df8bbbed4e",
+          "uuid": "e00332b3-202c-4dc6-be7a-cf59029907a2",
           "title": "Compra",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,33 @@
               "title": "Efetuar uma compra de produto",
               "fullTitle": "Compra Efetuar uma compra de produto",
               "timedOut": null,
-              "duration": 13713,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 13150,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
               "context": null,
               "code": "cy.backgroundLogin();\ncy.visit('/');\nvar nomeProduto = 'Faded Short Sleeve T-shirts';\ncy.contains(nomeProduto).trigger('mouseover');\ncy.contains(nomeProduto) // elemento\n.parent() // pai do elemento\n.siblings('div.button-container') // irmão do elemento\n.children('a') // filho do elemento\n.first() // add to cart\n.click(); // ação no elemento\n// Validando se o produto foi adicionado ao carrinho com sucesso\ncy.get('.icon-ok').parent() // h2\n.should('contain.text', 'Product successfully added to your shopping cart');\ncy.get('span#layer_cart_product_title').should('contain.text', nomeProduto); // cy.pause() pausa a automação em tempo de execução\ncy.get(\".button-container a[href$='controller=order']\").click();\ncy.get(\".cart_navigation a[href$='order&step=1']\").click(); // cy.get('#email').type('semana-agilizei@mail.com');\n// cy.get('#passwd').type('12345');\n// cy.get('button#SubmitLogin').click();\ncy.get('button[name=processAddress').click(); // //Validando se o endereço de entrega é igual ao de cobrança\n// cy.get('[type=checkbox]#addressesAreEquals')\n//     .should('have.attr', 'checked', 'checked') //asserção | atributo | valor\ncy.get('[type=checkbox]#cgv').check();\ncy.get('button[name=processCarrier]').click();\ncy.get('.bankwire').click();\ncy.get('.cart_navigation button[type=submit]').find('span').contains('I confirm my order').click();\ncy.get('.cheque-indent strong').should('contain.text', 'Your order on My Store is complete.'); // should\n// expect\n// validando o código do produto\n// [x] capturar o texto do box do\n// [x] filtrar o texto do box para estrair somente o ID do pedido\n// [x] armazenar o ID do pedido\n// [] obter o ID do pedido armazenado\ncy.get('div.box').invoke('text') // chamando a função text\n.then(function (text) {\n  console.log(text); // exibe o texto do conteúdo filtrado\n  console.log(text.match(/[A-Z][A-Z]+/g)[1]); // faz o match do texto com o array do regex procurando pelo id do pedido\n  // escrita de um arquivo json com o conteudo do Pedido\n  // caminho do arquivo (sempre a partir do root) | conteudo do arquivo\n  cy.writeFile('cypress/fixtures/pedido.json', {\n    id: \"\".concat(text.match(/[A-Z][A-Z]+/g)[1])\n  });\n});\ncy.get(\".cart_navigation a[href$='history']\").click(); // leitura do arquivo\ncy.readFile('cypress/fixtures/pedido.json').then(function (pedido) {\n  cy.get('tr.first_item .history_link a').should('contain.text', pedido.id);\n});",
-              "err": {},
-              "uuid": "50304222-f28b-4d1c-a588-cb086f4bdb10",
-              "parentUUID": "8ac7d3c4-7d18-4a37-91d4-59df8bbbed4e",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `button[name=processAddress`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `button[name=processAddress`, but never found it.\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/compra.spec.js:122:8)",
+                "diff": null
+              },
+              "uuid": "fa40d4ce-4856-4fef-82d7-ad8ab5573ab3",
+              "parentUUID": "e00332b3-202c-4dc6-be7a-cf59029907a2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "50304222-f28b-4d1c-a588-cb086f4bdb10"
+          "passes": [],
+          "failures": [
+            "fa40d4ce-4856-4fef-82d7-ad8ab5573ab3"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13713,
+          "duration": 13150,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
