@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-01-29T19:27:07.104Z",
-    "end": "2021-01-29T19:27:18.882Z",
-    "duration": 11778,
+    "start": "2021-01-29T19:38:07.185Z",
+    "end": "2021-01-29T19:38:17.407Z",
+    "duration": 10222,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "23642bff-e083-46d4-951f-7959c70d71c0",
+      "uuid": "b730b365-d5a8-4d4f-aa80-6caae46dfa59",
       "title": "",
       "fullFile": "cypress/integration/compra.spec.js",
       "file": "cypress/integration/compra.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b73e21ff-4573-4d0d-84e1-8dbdee00030f",
+          "uuid": "407151c9-02aa-45d1-a254-b834a87ca816",
           "title": "Compra",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Efetuar uma compra de produto",
               "fullTitle": "Compra Efetuar uma compra de produto",
               "timedOut": null,
-              "duration": 11697,
+              "duration": 10144,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying: Expected to find element: `button[name=processAddress`, but never found it.\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/compra.spec.js:122:8)",
                 "diff": null
               },
-              "uuid": "5ca8a550-5ebf-462e-8e84-2a0fb0b6760f",
-              "parentUUID": "b73e21ff-4573-4d0d-84e1-8dbdee00030f",
+              "uuid": "5a86040a-defc-4881-b83b-d8acefdb8ea3",
+              "parentUUID": "407151c9-02aa-45d1-a254-b834a87ca816",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "5ca8a550-5ebf-462e-8e84-2a0fb0b6760f"
+            "5a86040a-defc-4881-b83b-d8acefdb8ea3"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 11697,
+          "duration": 10144,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -88,7 +88,7 @@
       "options": {
         "quiet": true,
         "reportFilename": "mochawesome",
-        "saveHtml": false,
+        "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -102,7 +102,7 @@
         "reportDir": "mochawesome-report",
         "quiet": true,
         "overwrite": false,
-        "html": false,
+        "html": true,
         "json": true
       },
       "version": "5.1.0"

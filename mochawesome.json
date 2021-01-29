@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2021-01-29T19:26:47.530Z",
-    "end": "2021-01-29T19:27:00.858Z",
-    "duration": 13328,
+    "start": "2021-01-29T19:37:49.608Z",
+    "end": "2021-01-29T19:38:01.651Z",
+    "duration": 12043,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e6a8f358-c39a-4757-857e-df61e5244151",
+      "uuid": "f6eb3d5c-1631-4662-b43b-21a4af19b9ac",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ffb3ea93-20dd-483c-a9ec-7f1e6d217448",
+          "uuid": "d4e12f02-4b35-4a8c-a51b-9874eb17e6bb",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Efetuar cadastro de usuario",
               "fullTitle": "Cadastro Efetuar cadastro de usuario",
               "timedOut": null,
-              "duration": 11575,
+              "duration": 9762,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit('index.php?controller=authentication&back=my-account');\ncy.get('input#email_create').type(email);\ncy.get('button#SubmitCreate').click();\ncy.get('input#id_gender2').check();\ncy.get('input#customer_firstname').type(firstName);\ncy.get('input#customer_lastname').type(lastName);\ncy.get('input#passwd').type('TesteQA@123');\ncy.get('select#days').select('15');\ncy.get('select#months').select('November');\ncy.get('select#years').select('1997');\ncy.get('input#optin').check();\ncy.get('input[name=\"address1\"]').type(address);\ncy.get('input[name=\"address2\"]').type('Apartment 21');\ncy.get('input[name=\"city\"]').type(city);\ncy.get('select#id_state').select('Kansas');\ncy.get('input#postcode').type(zipcode);\ncy.get('input#phone_mobile').type(mobile);\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'my-account');\ncy.get('div.row').parent().children('p').should('contain.text', 'Welcome to your account.');",
               "err": {},
-              "uuid": "c11cfa5f-5c0c-40aa-a91d-0cef873b0af2",
-              "parentUUID": "ffb3ea93-20dd-483c-a9ec-7f1e6d217448",
+              "uuid": "f83e8960-568d-4f5f-ab58-5482451f717a",
+              "parentUUID": "d4e12f02-4b35-4a8c-a51b-9874eb17e6bb",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Efetuar cadastro de email inválido",
               "fullTitle": "Cadastro Efetuar cadastro de email inválido",
               "timedOut": null,
-              "duration": 1696,
+              "duration": 2233,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.visit('index.php?controller=authentication&back=my-account');\ncy.get('input#email_create').type('asfajjasdgfj');\ncy.get('button#SubmitCreate').click();\ncy.get('div.row .alert').parent().should('contain.text', 'Invalid email address.');",
               "err": {},
-              "uuid": "0f562713-8a8a-414e-805c-37acbceca774",
-              "parentUUID": "ffb3ea93-20dd-483c-a9ec-7f1e6d217448",
+              "uuid": "8087f860-0a70-46ee-b02c-f9bb9bbb2ad2",
+              "parentUUID": "d4e12f02-4b35-4a8c-a51b-9874eb17e6bb",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c11cfa5f-5c0c-40aa-a91d-0cef873b0af2",
-            "0f562713-8a8a-414e-805c-37acbceca774"
+            "f83e8960-568d-4f5f-ab58-5482451f717a",
+            "8087f860-0a70-46ee-b02c-f9bb9bbb2ad2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13271,
+          "duration": 11995,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -103,7 +103,7 @@
       "options": {
         "quiet": true,
         "reportFilename": "mochawesome",
-        "saveHtml": false,
+        "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -117,7 +117,7 @@
         "reportDir": "mochawesome-report",
         "quiet": true,
         "overwrite": false,
-        "html": false,
+        "html": true,
         "json": true
       },
       "version": "5.1.0"
