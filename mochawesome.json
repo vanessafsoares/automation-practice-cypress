@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2021-01-29T19:37:49.608Z",
-    "end": "2021-01-29T19:38:01.651Z",
-    "duration": 12043,
+    "start": "2021-01-29T19:40:11.599Z",
+    "end": "2021-01-29T19:40:23.705Z",
+    "duration": 12106,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f6eb3d5c-1631-4662-b43b-21a4af19b9ac",
+      "uuid": "ee030340-e6b0-4c76-bb8e-2a9ba91332e3",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d4e12f02-4b35-4a8c-a51b-9874eb17e6bb",
+          "uuid": "7bd5b2f9-3e4d-45c2-8a0e-fbea2e54591f",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Efetuar cadastro de usuario",
               "fullTitle": "Cadastro Efetuar cadastro de usuario",
               "timedOut": null,
-              "duration": 9762,
+              "duration": 10404,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit('index.php?controller=authentication&back=my-account');\ncy.get('input#email_create').type(email);\ncy.get('button#SubmitCreate').click();\ncy.get('input#id_gender2').check();\ncy.get('input#customer_firstname').type(firstName);\ncy.get('input#customer_lastname').type(lastName);\ncy.get('input#passwd').type('TesteQA@123');\ncy.get('select#days').select('15');\ncy.get('select#months').select('November');\ncy.get('select#years').select('1997');\ncy.get('input#optin').check();\ncy.get('input[name=\"address1\"]').type(address);\ncy.get('input[name=\"address2\"]').type('Apartment 21');\ncy.get('input[name=\"city\"]').type(city);\ncy.get('select#id_state').select('Kansas');\ncy.get('input#postcode').type(zipcode);\ncy.get('input#phone_mobile').type(mobile);\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'my-account');\ncy.get('div.row').parent().children('p').should('contain.text', 'Welcome to your account.');",
               "err": {},
-              "uuid": "f83e8960-568d-4f5f-ab58-5482451f717a",
-              "parentUUID": "d4e12f02-4b35-4a8c-a51b-9874eb17e6bb",
+              "uuid": "67e5cda7-3eb7-45d2-9359-da6be5ca56d8",
+              "parentUUID": "7bd5b2f9-3e4d-45c2-8a0e-fbea2e54591f",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Efetuar cadastro de email inválido",
               "fullTitle": "Cadastro Efetuar cadastro de email inválido",
               "timedOut": null,
-              "duration": 2233,
+              "duration": 1635,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.visit('index.php?controller=authentication&back=my-account');\ncy.get('input#email_create').type('asfajjasdgfj');\ncy.get('button#SubmitCreate').click();\ncy.get('div.row .alert').parent().should('contain.text', 'Invalid email address.');",
               "err": {},
-              "uuid": "8087f860-0a70-46ee-b02c-f9bb9bbb2ad2",
-              "parentUUID": "d4e12f02-4b35-4a8c-a51b-9874eb17e6bb",
+              "uuid": "e67c7abe-20cf-44e7-bb68-c589d62630fb",
+              "parentUUID": "7bd5b2f9-3e4d-45c2-8a0e-fbea2e54591f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f83e8960-568d-4f5f-ab58-5482451f717a",
-            "8087f860-0a70-46ee-b02c-f9bb9bbb2ad2"
+            "67e5cda7-3eb7-45d2-9359-da6be5ca56d8",
+            "e67c7abe-20cf-44e7-bb68-c589d62630fb"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11995,
+          "duration": 12039,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
