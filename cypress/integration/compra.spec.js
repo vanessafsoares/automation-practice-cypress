@@ -34,7 +34,7 @@ context('Compra', () => {
     // cy.get('#passwd').type('12345');
     // cy.get('button#SubmitLogin').click();
 
-    cy.get('button[name=processAddress']).click()
+    cy.get('button[name=processAddress]').click()
     // //Validando se o endereço de entrega é igual ao de cobrança
     // cy.get('[type=checkbox]#addressesAreEquals')
     //     .should('have.attr', 'checked', 'checked') //asserção | atributo | valor
