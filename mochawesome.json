@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 2,
-    "passes": 1,
+    "passes": 2,
     "pending": 0,
-    "failures": 1,
-    "start": "2022-01-03T18:31:04.556Z",
-    "end": "2022-01-03T18:31:23.380Z",
-    "duration": 18824,
+    "failures": 0,
+    "start": "2022-08-18T23:03:09.092Z",
+    "end": "2022-08-18T23:03:33.224Z",
+    "duration": 24132,
     "testsRegistered": 2,
-    "passPercent": 50,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7af911ab-47ad-4a65-b83b-62d8ae414812",
+      "uuid": "7dc5c500-5bf4-4895-8145-49dfa4808b97",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "98ef3a82-b9dd-4b1a-8ef1-bdcb6d7387b5",
+          "uuid": "fa79e922-1d2b-482d-b042-9d416ef8e843",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,17 @@
               "title": "Efetuar cadastro de usuario",
               "fullTitle": "Cadastro Efetuar cadastro de usuario",
               "timedOut": null,
-              "duration": 13952,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 17138,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('index.php?controller=authentication&back=my-account');\ncy.get('input#email_create').type(email);\ncy.get('button#SubmitCreate').click();\ncy.get('input#id_gender2').check();\ncy.get('input#customer_firstname').type(firstName);\ncy.get('input#customer_lastname').type(lastName);\ncy.get('input#passwd').type('TesteQA@123');\ncy.get('select#days').select('15');\ncy.get('select#months').select('November');\ncy.get('select#years').select('1997');\ncy.get('input#optin').check();\ncy.get('input[name=\"address1\"]').type(address);\ncy.get('input[name=\"address2\"]').type('Apartment 21');\ncy.get('input[name=\"city\"]').type(city);\ncy.get('select#id_state').select('Kansas');\ncy.get('input#postcode').type(zipcode);\ncy.get('input#phone_mobile').type(mobile);\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'my-account');\ncy.get('div.row').parent().children('p').should('contain.text', 'Welcome to your account.');",
-              "err": {
-                "message": "AssertionError: Timed out retrying: Expected to find element: `input#id_gender2`, but never found it.",
-                "estack": "AssertionError: Timed out retrying: Expected to find element: `input#id_gender2`, but never found it.\n    at Context.eval (http://automationpractice.com/__cypress/tests?p=cypress/integration/cadastro.spec.js:2221:8)",
-                "diff": null
-              },
-              "uuid": "a4bfb8a6-4506-4eea-9a8c-0bb3a0a625ee",
-              "parentUUID": "98ef3a82-b9dd-4b1a-8ef1-bdcb6d7387b5",
+              "err": {},
+              "uuid": "b39c3cfe-5d8a-435a-9c5f-d4ca438c363a",
+              "parentUUID": "fa79e922-1d2b-482d-b042-9d416ef8e843",
               "isHook": false,
               "skipped": false
             },
@@ -60,7 +56,7 @@
               "title": "Efetuar cadastro de email inválido",
               "fullTitle": "Cadastro Efetuar cadastro de email inválido",
               "timedOut": null,
-              "duration": 4806,
+              "duration": 6947,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -69,22 +65,21 @@
               "context": null,
               "code": "cy.visit('index.php?controller=authentication&back=my-account');\ncy.get('input#email_create').type('asfajjasdgfj');\ncy.get('button#SubmitCreate').click();\ncy.get('div.row .alert').parent().should('contain.text', 'Invalid email address.');",
               "err": {},
-              "uuid": "9929997d-9a7c-49a5-bf57-3df8102bc347",
-              "parentUUID": "98ef3a82-b9dd-4b1a-8ef1-bdcb6d7387b5",
+              "uuid": "d97d9954-8f12-4b49-8a23-77538d93fb4d",
+              "parentUUID": "fa79e922-1d2b-482d-b042-9d416ef8e843",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9929997d-9a7c-49a5-bf57-3df8102bc347"
+            "b39c3cfe-5d8a-435a-9c5f-d4ca438c363a",
+            "d97d9954-8f12-4b49-8a23-77538d93fb4d"
           ],
-          "failures": [
-            "a4bfb8a6-4506-4eea-9a8c-0bb3a0a625ee"
-          ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 18758,
+          "duration": 24085,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
